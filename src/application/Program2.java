@@ -16,6 +16,10 @@ public class Program2 {
 		depDao.insert(dep);
 		System.out.println("===== Test 1: Insert Department ===== ");
 		System.out.println("Inserted new Department");
+		System.out.println("===== Test 2: FindById Department ===== ");
+		dep = depDao.findById(4);
+		System.out.println(dep);
+		
 		
 		
 
