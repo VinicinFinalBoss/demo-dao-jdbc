@@ -38,7 +38,7 @@ public class DepartmentDaoJDBC implements DepartmentDao {
 	public void update(Department obj) {
 		PreparedStatement st = null;
 		try {
-			st = conn.prepareStatement("UPDATE Department SET Name = ? WHERE DepartmentId = ?");
+			st = conn.prepareStatement("UPDATE Department SET Name = ? WHERE Id = ?");
 			st.setString(1, obj.getName());
 			st.setInt(2, obj.getId());
 
